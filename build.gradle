@@ -2,13 +2,11 @@ plugins { // (1)
     id 'org.springframework.boot' version '2.4.1' // RELEASE 삭제
     id 'io.spring.dependency-management' version '1.0.10.RELEASE'
     id 'java'
-    id 'application'
 }
 
 group 'com.jojoldu.book'
 version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
-mainClassName = 'com.jojoldu.book.springboot'
 
 repositories {
     mavenCentral()
@@ -46,5 +44,5 @@ dependencies {
 }
 
 bootJar{
-    bootJarMainClassName {'org.syaku.blog.Application'}
+    bootJarMainClassName{'org.syaku.blog.Application'}
 }
